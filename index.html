@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;500;600;800&display=swap" rel="stylesheet"> 
+
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="flex align mg-bottom-mid" style="justify-content: space-between;">
+      <div class="flex center align clr-primary-blue" style="--gap:1.5em">
+        <h1 class="fs-32 fw-800">Notifications</h1>
+
+        <div class="numbered-box bg-primary-blue clr-neutral-white">
+          <p class="fw-800" id="notificationsNum">3</p>
+        </div>
+      </div>
+
+      <div class="cursor-pointer" id="markasRead">Mark all as read</div>
+    </header>
+
+    <section>
+      <div class="flex mg-bottom-small notification unread" style="--gap: 1.5em">
+        <div>
+          <div class="rounded-image">
+            <img src="assets/images/avatar-mark-webber.webp">
+          </div>
+        </div>
+
+        <div>
+          <p>
+            <span class="text-bold cursor-pointer">Mark Webber</span> reacted to your recent post <span class="text-semi-bold">My first tournament</span> today!
+            <span class="bg-primary-red circular-dot"></span>
+          </p>
+
+          <p>1m ago</p>
+        </div>
+      </div>
+
+      <div class="flex mg-bottom-small notification unread">
+         <div>
+            <div class="rounded-image">
+              <img src="assets/images/avatar-angela-gray.webp">
+            </div>
+         </div>
+
+         <div>
+           <p>
+              <span class="text-bold cursor-pointer">Angela Gray</span> followed you
+              <span class="bg-primary-red circular-dot"></span>
+           </p>
+
+           <p>5m ago</p>
+         </div>
+      </div>
+
+      <div class="flex mg-bottom-small notification unread">
+        <div>
+          <div class="rounded-image">
+            <img src="assets/images/avatar-jacob-thompson.webp">
+          </div>
+        </div>
+
+        <div>
+          <p>
+            <span class="text-bold cursor-pointer">Jacob Thompson</span> has joined your group <span class="clr-primary-blue fw-500">Chess Club</span>
+            <span class="bg-primary-red circular-dot"></span>
+          </p>
+
+          <p>1 day ago</p>
+        </div>
+      </div>
+
+      <div class="flex notification mg-bottom-small active">
+        <div>
+          <div class="rounded-image">
+            <img src="assets/images/avatar-rizky-hasanuddin.webp">
+          </div>
+        </div>
+
+        <div>
+          <p><span class="text-bold cursor-pointer">Rizky Hasanuddin</span> sent you a private message</p>
+          <p>5 days ago</p>
+
+          <p class=" cursor-pointer expanded mg-top-small">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex notification mg-bottom-small">
+        <div>
+          <div class="rounded-image">
+            <img src="assets/images/avatar-kimberly-smith.webp">
+          </div>
+        </div>
+
+        <div>
+          <p><span class="text-bold cursor-pointer">Kimberly Smith</span> commented on your picture</p>
+          <p>1 week ago</p>
+        </div>
+
+        <div class="flex" style="flex-grow: 1; justify-content: flex-end;">
+          <div class="normal-image cursor-pointer">
+            <img src="assets/images/image-chess.webp">
+          </div>
+        </div>
+      </div>
+
+      <div class="flex notification mg-bottom-small">
+        <div>
+          <div class="rounded-image">
+            <img src="assets/images/avatar-nathan-peterson.webp">
+          </div>
+        </div>
+
+        <div>
+          <p><span class="text-bold cursor-pointer">Nathan Peterson</span> reacted to your recent post 5 end-game strategies to increase your win rate</p>
+          <p>2 weeks ago</p>
+        </div>
+      </div>
+
+      <div class="flex notification mg-bottom-small">
+        <div>
+          <div class="rounded-image">
+            <img src="assets/images/avatar-anna-kim.webp">
+          </div>
+        </div>
+
+        <div>
+          <p><span class="text-bold cursor-pointer">Anna Kim</span> left the group <span class="clr-primary-blue fw-500">Chess Club</span></p>
+          <p>2 weeks ago</p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
