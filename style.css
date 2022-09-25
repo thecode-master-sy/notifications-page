@@ -61,11 +61,16 @@ img {
 .container {
 	width: min(100%, 40em);
 	margin-inline: auto;
+	margin: 0 auto;
 	padding: var(--pd-mid);
 }
 
 .flex {
 	display: flex;
+	-webkit-gap: var(--gap, 1rem);
+	-moz-gap: var(--gap, 1rem);
+	-o-gap: var(--gap, 1rem);
+	-ms-gap: var(--gap, 1rem);
 	gap: var(--gap, 1rem);
 }
 
@@ -167,8 +172,7 @@ img {
 
 .numbered-box {
 	border-radius: var(--bd-rdx);
-	padding-block: 4px;
-	padding-inline: var(--pd-mid);
+	padding: 4px var(--pd-mid);
 }
 
 .notification {
